@@ -1,12 +1,20 @@
 {
   "name": "animations-css",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./CSS/Base/main.scss:style.css"
+    "sass": "sass --watch ./CSS/main.scss:style.css"
   },
   "author": "brahim",
-  "license": "ISC"}
-
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrahimZerd/Projet_3_animations_css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BrahimZerd/Projet_3_animations_css/issues"
+  },
+  "homepage": "https://github.com/BrahimZerd/Projet_3_animations_css#readme",
+  "description": ""
+}

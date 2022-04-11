@@ -1,3 +1,87 @@
+header img {
+  width: 25vh;
+  height: 4vh;
+  display: block;
+  margin: auto;
+  padding: 25px;
+}
 
+header {
+  height: 8vh;
+}
+
+footer {
+  background-color: #000;
+  height: 23vh;
+  color: #fff;
+  font-family: "shrikhand";
+}
+footer h3 {
+  display: block;
+  margin-left: 2.7vh;
+  padding-top: 2vh;
+  font-size: 2.5vh;
+  font-weight: 100;
+}
+footer li {
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: 2vh;
+  margin: 0.9vh;
+}
+footer li a {
+  display: flex;
+}
+footer nav {
+  margin-left: 2.5vh;
+  margin-top: 2vh;
+  display: block;
+}
+footer i {
+  margin-right: 1vh;
+  width: 2vh;
+}
+
+.localisation div {
+  background-color: rgb(240, 236, 236);
+  display: flex;
+  height: 48px;
+  align-items: center;
+}
+.localisation div input {
+  margin-right: 120px;
+  width: 50%;
+}
+.localisation div i {
+  margin-left: 27%;
+  width: 10%;
+}
+
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1.8vh;
+}
+
+@font-face {
+  font-family: "shrikhand";
+  src: url("font/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "roboto";
+  src: url("font/Roboto-Regular.ttf");
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* mise en place du header */
 
 /*# sourceMappingURL=style.css.map */
