@@ -1,9 +1,13 @@
-@import "./layout/header";
-@import './layout/footer.scss';
-@import "./pages/main-page.scss";
-@import './Utils/fonctions.scss';
-@import './Utils/variables.scss';
-@import './Base/structure';
+@import 'Utils/variables.scss';
+@import 'composants/buttons';
+@import "layout/header";
+@import 'layout/footer.scss';
+@import 'layout/presentation';
+@import "pages/main-page.scss";
+@import 'Utils/fonctions.scss';
+@import 'Base/globals';
+@import 'layout/navigate.scss';
+@import 'composants/icones';
 /* mise en place du header */
 
 
