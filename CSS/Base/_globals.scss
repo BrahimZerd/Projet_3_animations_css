@@ -1,0 +1,30 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1.8vh;
+    font-family: 'roboto';
+
+}
+
+@font-face {
+    
+    font-family: 'shrikhand';
+    src: url('font/Shrikhand-Regular.ttf');
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('font/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'robotoLight';
+    src: url('font/Roboto-Light.ttf');
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+li {
+    list-style-type: none;
+}

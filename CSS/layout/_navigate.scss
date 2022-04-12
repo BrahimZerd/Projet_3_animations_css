@@ -1,0 +1,37 @@
+#navigate {
+    height: 50vh;
+    width: 100%;
+    h1 {
+        margin: 3vh;
+        font-size: 2.8vh;
+
+    }
+    .navigate__nav{
+       background-color:  $background-main;
+       border-radius: 25px;
+        line-height: 10vh;
+        text-align: center;
+        margin: 2.5vh;
+        margin-left: 3vh;
+        width: 85%;
+        height: 10vh;
+        color: black;
+        font-weight: 600;
+        position: relative;
+        @include shadow-box;
+        .navigate__box{
+            display: block;
+            height: 3.5vh;
+            width: 3.5vh;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            color: #fff;
+            line-height: 3.3vh;
+            left: -1.48vh;
+            bottom: 3vh;
+            background-color: $primary-color;
+        }
+        
+        
+}}
