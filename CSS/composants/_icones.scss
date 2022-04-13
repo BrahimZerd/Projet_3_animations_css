@@ -4,5 +4,10 @@
     right: 14vh;
     bottom: 3.8vh;
     color: darken($localisation-color, 100%);
+    width: 100%;
     font-size: 2.5vh;
+    &:hover {
+        color: $primary-color;
+    }
+    
 }

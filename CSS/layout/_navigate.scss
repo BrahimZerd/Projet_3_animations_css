@@ -23,6 +23,10 @@
         font-weight: 600;
         position: relative;
         @include shadow-box;
+        &:hover {
+            background-color: lighten($primary-color, 35%);
+        }
+        
         /*boite chiffrée indiquant la liste*/
         .navigate__box{
             display: block;
@@ -35,6 +39,7 @@
             left: -1.48vh;
             bottom: 3vh;
             background-color: $primary-color;
+            
         }
         
         

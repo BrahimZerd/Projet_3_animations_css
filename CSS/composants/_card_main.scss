@@ -1,0 +1,39 @@
+.restaurant__group{
+    display: flex;
+    
+    flex-direction: column;
+    
+    
+}
+
+.restaurant__card{
+    height: 28vh;
+    background-color: #fff;
+    border-radius: 25px;
+     width: 80%;
+    margin-bottom: 3vh;
+    margin-left: 3.5vh;
+    @include shadow-box;
+    position: relative;
+    img{
+        object-fit:cover;
+        border-radius: 25px 25px 0 0;
+        height: 67%;
+        width: 100%;
+    }
+    h2{
+        padding: 1vh;
+    }
+    span {
+        padding: 1vh;
+        font-family: 'RobotoLight';
+    }
+    i{
+        position: absolute;
+        left: 85%;
+        bottom: 15%;
+        font-size: 3vh;
+    }
+    
+    
+}
