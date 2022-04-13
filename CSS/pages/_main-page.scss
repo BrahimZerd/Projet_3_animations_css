@@ -1,4 +1,7 @@
+/*partie localisation avec l'icone et la barre de recherche */
 #localisation {
+    overflow: hidden;
+
     div { 
         background-color: $localisation-color;
         display: flex;
