@@ -2,15 +2,17 @@
 /*mise en place de la page et la police et les liens cliquables*/
 * {
     box-sizing: content-box;
+    
+    font-size: 1.8vh;
+    
+}
+body{
+    font-family: 'roboto';
+    overflow-x: hidden visible;
     margin: 0;
     padding: 0;
     width: 100%;
-    font-size: 1.8vh;
-    font-family: 'roboto';
-    overflow-x: hidden visible;
 
-    
-    
 }
 
 

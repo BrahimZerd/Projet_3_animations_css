@@ -22,18 +22,75 @@
         width: 100%;
     }
     h2{
-        padding: 1vh;
+        margin: 2%;
     }
     span {
-        padding: 1vh;
+        margin: 2%;
         font-family: 'RobotoLight';
     }
-    i{
+    i{  
+        
         position: absolute;
         left: 85%;
         bottom: 15%;
         font-size: 3vh;
-    }
+        
+        
+       
+       
+        
+        
+        &:active{
+            transform: animation;
+             transition: 1s;
+             animation:normal;
+             animation-delay: 1000ms;
+             transition: animation font-weight ease-out;
+                color: red;
+               font-weight: bold;
+               transform-origin: 50% bottom;
+            }
+           
+        
+        @keyframes icone{
+            0% {
+                opacity: .2;
+                transform: scaleY(0.1);
+                
+                
+                
+
+
+            }
+            10%{
+                opacity: .4;
+                transform: scaleY(0.5);
+                color: white;
+               
+            }
+            50%{
+                opacity: .8;
+                
+            }
+            100%{
+                opacity: 1;
+                transform: scaleY(0.8);
+                
+                
+               
+            }
+        }
+        
+        
+            
+        }
+        
+        
+        
+        
+        
+    
+    
     
     
 }

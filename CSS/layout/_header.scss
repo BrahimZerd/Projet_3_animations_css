@@ -5,9 +5,25 @@ header img {
     display: block;
     margin: auto;
    padding: 25px;
+   @media(min-width: 768px){
+   margin: 0;
+   width: 15vh;
+   }
 
 }
 header {
+    a{
+        display:block;
+        position: relative;
+        width: 4vh;
+        height: 4vh;
+        
+    }
+    display: flex;
     height: 8vh;
     overflow: hidden;
+    @media (min-width: 768px){
+        
+     height: 10vh;
+    }
 }

@@ -1,6 +1,16 @@
 /*partie localisation avec l'icone et la barre de recherche */
 #localisation {
     overflow: hidden;
+     
+    @media (min-width:768px){
+        width: 35vh;
+        margin-left: 75vh;
+        
+        input{
+            margin-left: 2vh;
+        
+        }
+    }
 
     div { 
         background-color: $localisation-color;
@@ -8,6 +18,13 @@
         height: 7vh;
         align-items: center;
         box-shadow: 0px 0 5px 1px;
+        @media (max-width:768px){
+        button{
+            display: none;
+            border-radius: 25px;
+            background-color: $primary-color;
+
+        }}
         input {
             margin-right: 30vh;
             width: 50%;
@@ -17,12 +34,26 @@
             font-size: 2vh;
             
         }
-        i{
+        
+            
+        i{  
+            
             margin-left: 32%;
             width:10%;
             font-size: 2.3vh;
+            @media (min-width:768px){
+                display:none;}
         }
-        
+        @media (min-width:768px){
+            input{
+                width: 17vh;
+
+            }
+        form {
+            display: flex;
+            
+            
+        }}
 
        }
-}
+    }
