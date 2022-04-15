@@ -1,6 +1,8 @@
 /*structure et couleur du footer*/
 footer {
-    overflow: hidden;
+    
+    
+    
 
     background-color: rgb(82, 78, 78);
     height: 24vh;
@@ -16,20 +18,19 @@ footer {
         font-weight: 100;
     }
     
-    li{
+    a{
         font-family: "roboto";
         font-weight: bold;
         font-size: 2vh;
-        margin: .9vh;
-        a{
-            display: flex;
-            width: 48%;
-        }
+        width: 70%;
+        margin-top: 1vh;
     }
     nav {
         margin-left: 2.5vh;
         margin-top: 2vh;
         display: block;
+        display: flex;
+        flex-direction: column;
     }
     i{
         margin-right: 1vh;

@@ -1,0 +1,120 @@
+.loader__box {
+    content: '';
+    position:absolute;
+    left: 0;
+    top:0;
+    width: 5vh;
+    height: 15vh;
+    background-color: $primary-color;
+    
+    margin: 5vh;
+    animation :grow 2s linear 0.2s infinite;
+    
+}
+.section__loader {
+    
+    
+    animation: camer;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    transform-origin: center center;
+    
+    height: 100%;
+    width: 100%;
+    color: black;
+    margin: auto;
+   
+    
+}
+@keyframes camer{
+    0%{
+        
+        transform: scale(1);
+        
+    }
+    50%{
+        transform: scale(1);
+    }
+    85%{
+        transform: scale(1);
+    }
+    95%{
+        transform:scale(1);
+    }
+    99%{
+        transform:scale(0);
+    }
+    100%{
+        transform: scale(0);;
+        
+
+    }
+}
+   
+    
+    
+
+
+
+
+
+
+/* @keyframes grow {
+    0% {
+        transform: scaleY(0); opacity: 0;}
+        50% {
+            transform: scaleY(1); opacity: 1;}
+           100% {
+                transform: scaleY(1); opacity: 1;
+                z-index: -10;
+         ;}
+        
+        } */
+    
+        
+ 
+        @keyframes menu-appearance {
+            from {
+              transform: translateY(-110%);
+            }
+            to {
+              transform: translateY(0);
+            }
+          }
+          @keyframes rotating-loader {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+          @keyframes loader-stop {
+            from {
+              opacity: 90%;
+            }
+            to {
+              display: none;
+              opacity: 0%;
+              z-index: -1;
+            }
+          }
+          .loader-container {
+            background-color: #FFF;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            z-index: 1;
+            animation: loader-stop 3s 1s both;
+          }
+          
+          .loader-content {
+            margin: 200px auto;
+            border: 20px solid #FF79DA;
+            border-top-color: #9356DC;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            z-index: 1;
+            animation: rotating-loader 3s linear infinite;
+          }

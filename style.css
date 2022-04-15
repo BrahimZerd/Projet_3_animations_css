@@ -52,7 +52,6 @@ header a {
 
 /*structure et couleur du footer*/
 footer {
-  overflow: hidden;
   background-color: rgb(82, 78, 78);
   height: 24vh;
   color: #fff;
@@ -65,20 +64,19 @@ footer h3 {
   font-size: 2.5vh;
   font-weight: 100;
 }
-footer li {
+footer a {
   font-family: "roboto";
   font-weight: bold;
   font-size: 2vh;
-  margin: 0.9vh;
-}
-footer li a {
-  display: flex;
-  width: 48%;
+  width: 70%;
+  margin-top: 1vh;
 }
 footer nav {
   margin-left: 2.5vh;
   margin-top: 2vh;
   display: block;
+  display: flex;
+  flex-direction: column;
 }
 footer i {
   margin-right: 1vh;
@@ -116,6 +114,106 @@ footer i {
   font-size: 2.8vh;
   margin: 5vh;
   display: inline-block;
+}
+
+.loader__box {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5vh;
+  height: 15vh;
+  background-color: #9356DC;
+  margin: 5vh;
+  animation: grow 2s linear 0.2s infinite;
+}
+
+.section__loader {
+  animation: camer;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  transform-origin: center center;
+  height: 100%;
+  width: 100%;
+  color: black;
+  margin: auto;
+}
+
+@keyframes camer {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(1);
+  }
+  95% {
+    transform: scale(1);
+  }
+  99% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+/* @keyframes grow {
+    0% {
+        transform: scaleY(0); opacity: 0;}
+        50% {
+            transform: scaleY(1); opacity: 1;}
+           100% {
+                transform: scaleY(1); opacity: 1;
+                z-index: -10;
+         ;}
+
+        } */
+@keyframes menu-appearance {
+  from {
+    transform: translateY(-110%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes rotating-loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-stop {
+  from {
+    opacity: 90%;
+  }
+  to {
+    display: none;
+    opacity: 0%;
+    z-index: -1;
+  }
+}
+.loader-container {
+  background-color: #FFF;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  animation: loader-stop 3s 1s both;
+}
+
+.loader-content {
+  margin: 200px auto;
+  border: 20px solid #FF79DA;
+  border-top-color: #9356DC;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  animation: rotating-loader 3s linear infinite;
 }
 
 /*mise en place de la page et la police et les liens cliquables*/
@@ -207,6 +305,7 @@ li {
   color: #9356DC;
 }
 
+/* fleche du header */
 header i {
   font-size: 2.2vh;
   position: absolute;
@@ -234,7 +333,8 @@ header i {
   display: flex;
   height: 7vh;
   align-items: center;
-  box-shadow: 0px 0 5px 1px;
+  box-shadow: -2px 20px 40px -14px #000;
+  border-top: solid 2px rgba(189, 177, 177, 0.341);
 }
 @media (max-width: 768px) {
   #localisation div button {
@@ -274,20 +374,23 @@ header i {
   display: flex;
   flex-direction: column;
 }
+.restaurant__group a {
+  color: black;
+}
 
 .restaurant__card {
   height: 28vh;
   background-color: #fff;
-  border-radius: 25px;
+  border-radius: 10px;
   width: 80%;
   margin-bottom: 3vh;
-  margin-left: 3.5vh;
+  margin-left: 4.5vh;
   box-shadow: 2px 10px 15px rgba(189, 177, 177, 0.341);
   position: relative;
 }
 .restaurant__card img {
   object-fit: cover;
-  border-radius: 25px 25px 0 0;
+  border-radius: 10px 10px 0 0;
   height: 67%;
   width: 100%;
 }
@@ -306,31 +409,27 @@ header i {
 }
 .restaurant__card i:active {
   transform: animation;
-  transition: 1s;
+  transition: 2s;
   animation: normal;
-  animation-delay: 1000ms;
+  animation-delay: 3000ms;
   transition: animation font-weight ease-out;
   color: red;
   font-weight: bold;
   transform-origin: 50% bottom;
 }
-@keyframes icone {
-  0% {
-    opacity: 0.2;
-    transform: scaleY(0.1);
-  }
-  10% {
-    opacity: 0.4;
-    transform: scaleY(0.5);
-    color: white;
-  }
-  50% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-    transform: scaleY(0.8);
-  }
+
+.restaurant__new {
+  position: absolute;
+  right: 4%;
+  top: 4%;
+  background-color: #99E2D0;
+  color: #338d75;
+  width: 10vh;
+  font-weight: bold;
+  text-align: center;
+  line-height: 4vh;
+  height: 4vh;
+  border-radius: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,12 +8,21 @@
   
 </head>
 <body>
+  <div class="loader-container">
+    <div class="loader-content"></div>
+</div>
   <header>
     <!--mise en place du logo header-->
     <img src="images/logo/ohmyfood.png" alt="logo_ohmyfood" />
     
   </header>
   <main>
+    <!--
+    
+      <div class="loader__box">
+        
+      </div>-->
+    
     <section id="localisation">
       <!--section localisation avec l'icone et le formulaire de recherche pour la ville-->
       <div class="localisation__div">
@@ -42,6 +51,7 @@
       <nav>
         <a href="#">
           <div class="navigate__nav">
+            <!--numérotation de la navigation-->
             <span class="navigate__box">1</span>
             <i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant
           </div>
@@ -64,31 +74,41 @@
     <section id="restaurant">
       <h1> Restaurants</h1>
       <div class="restaurant__group">
+        <a href="page_1.html">
         <div class="restaurant__card">
+          <div class="restaurant__new">Nouveau</div>
           <img src="images/restaurants/menilmontant.jpg" alt="menilmontant" />
           <h2>La palette du goût</h2>
           <span>Ménilmontant</span>
           <i class="fa-regular fa-heart"></i>
         </div>
+        </a>
+        <a href="page_2.html">
         <div class="restaurant__card">
+          <div class="restaurant__new">Nouveau</div>
           <img src="images/restaurants/charonne.jpg" alt="charonne" />
           <h2>La note enchantée</h2>
           <span>Charonne</span>
           <i class="fa-regular fa-heart"></i>
         </div>
+        </a>
+        <a href="page_3.html" >
         <div class="restaurant__card">
           <img src="images/restaurants/cite_rouge.jpg" alt="cite_rouge" />
           <h2>À la française</h2>
           <span>Cité Rouge</span>
           <i class="fa-regular fa-heart"></i>
         </div>
+        </a>
+      
+      <a href="page_4.html">
         <div class="restaurant__card">
           <img src="images/restaurants/folie_mericourt.jpg" alt="folie_mericourt" />
           <h2>Le délice des sens</h2>
           <span>Folie-Méricourt</span>
           <i class="fa-regular fa-heart"></i>
         </div>
-
+      </a>
       </div>
     </section>
   </main>
@@ -97,13 +117,13 @@
       <!--le footer pour avoir la liste de liens utiles-->
       <h3>ohmyfood</h3>
       <nav>
-        <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
-        <li><a href="#"><i class="fa-solid fa-handshake-angle"></i></i>Devenir partenaire</a></li>
-        <li><a href="#">Mentions légales</a></li>
-        <li><a href="mailto:">Contact</a></li>
-      </ul>
+        <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+        <a href="#"><i class="fa-solid fa-handshake-angle"></i></i>Devenir partenaire</a>
+        <a href="#">Mentions légales</a>
+        <a href="mailto:">Contact</a>
+      
     </nav>
-    <ul>
+    
     </div>
 
   </footer>

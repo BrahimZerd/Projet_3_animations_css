@@ -2,6 +2,9 @@
     display: flex;
     
     flex-direction: column;
+    a{
+        color: black;
+    }
     
     
 }
@@ -9,15 +12,15 @@
 .restaurant__card{
     height: 28vh;
     background-color: #fff;
-    border-radius: 25px;
+    border-radius: 10px;
      width: 80%;
     margin-bottom: 3vh;
-    margin-left: 3.5vh;
+    margin-left: 4.5vh;
     @include shadow-box;
     position: relative;
     img{
         object-fit:cover;
-        border-radius: 25px 25px 0 0;
+        border-radius: 10px 10px 0 0;
         height: 67%;
         width: 100%;
     }
@@ -34,56 +37,37 @@
         left: 85%;
         bottom: 15%;
         font-size: 3vh;
-        
-        
-       
-       
-        
-        
+
         &:active{
             transform: animation;
-             transition: 1s;
+             transition: 2s;
              animation:normal;
-             animation-delay: 1000ms;
+             animation-delay: 3000ms;
              transition: animation font-weight ease-out;
                 color: red;
                font-weight: bold;
                transform-origin: 50% bottom;
-            }
-           
-        
-        @keyframes icone{
-            0% {
-                opacity: .2;
-                transform: scaleY(0.1);
-                
-                
-                
-
-
-            }
-            10%{
-                opacity: .4;
-                transform: scaleY(0.5);
-                color: white;
-               
-            }
-            50%{
-                opacity: .8;
-                
-            }
-            100%{
-                opacity: 1;
-                transform: scaleY(0.8);
-                
-                
-               
-            }
+            }}
+            
+           }
+           .restaurant__new {
+            position: absolute;
+            right: 4%;
+            top: 4%;
+    
+            background-color: #99E2D0;
+            color: #338d75;
+            width: 10vh;
+            font-weight: bold;
+            text-align: center;
+            line-height: 4vh;
+            height: 4vh;
+            border-radius: 2px;
         }
         
         
             
-        }
+        
         
         
         
@@ -93,4 +77,3 @@
     
     
     
-}
