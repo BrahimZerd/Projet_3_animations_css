@@ -1,8 +1,6 @@
 /*partie localisation avec l'icone et la barre de recherche */
 #localisation {
     overflow: hidden;
-    
-     
     @media (min-width:768px){
         width: 35vh;
         margin-left: 75vh;
@@ -11,9 +9,8 @@
             margin-left: 2vh;
         
         }
-    }
-
-    div { 
+    }   
+        div { 
         background-color: $localisation-color;
         display: flex;
         height: 7vh;

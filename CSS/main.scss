@@ -1,16 +1,27 @@
 /* mise en place des imports des autres partiels*/
+
+
 @import 'Utils/variables.scss';
-@import 'composants/buttons';
+@import 'Utils/fonctions.scss';
+@import 'Utils/mixins';
+
+@import 'Base/globals';
+
 @import "layout/header";
 @import 'layout/footer.scss';
 @import 'layout/presentation';
-@import "pages/main-page.scss";
-@import 'Utils/fonctions.scss';
-@import 'Base/globals';
 @import 'layout/navigate.scss';
-@import 'composants/icones';
 @import 'layout/localisation';
-@import 'composants/card_main';
+@import 'layout/card_main';
+
+@import "pages/main-page.scss";
+@import 'pages/Menilmontant';
+
+@import 'composants/icones';
+@import 'composants/buttons';
+
+@import 'composants/loader.scss';
+
 
 
 

@@ -8,7 +8,7 @@
     
     
 }
-
+/*card restaurant */
 .restaurant__card{
     height: 28vh;
     background-color: #fff;
@@ -37,19 +37,20 @@
         left: 85%;
         bottom: 15%;
         font-size: 3vh;
+        &:hover {
+        animation: heart-a2 3s .2s both;
+        cursor: pointer;
+        transform-origin: 50% bottom;
+           
+        }
+    
+     
+    }
 
-        &:active{
-            transform: animation;
-             transition: 2s;
-             animation:normal;
-             animation-delay: 3000ms;
-             transition: animation font-weight ease-out;
-                color: red;
-               font-weight: bold;
-               transform-origin: 50% bottom;
-            }}
-            
-           }
+    }
+   
+     
+    /*bloc "nouveau"*/
            .restaurant__new {
             position: absolute;
             right: 4%;

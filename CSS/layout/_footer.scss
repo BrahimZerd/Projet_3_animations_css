@@ -3,14 +3,16 @@ footer {
     
     
     
-
-    background-color: rgb(82, 78, 78);
+   position: absolute;
+   bottom: 0vh;
+    background-color: rgb(41, 39, 39);
     height: 24vh;
     color: #fff;
+    width: 100%;
     
     h3 {
         font-family: 'shrikhand';
-
+        margin-top: 0;
         display: block;
         margin-left: 3vh;
         padding-top: 2vh;

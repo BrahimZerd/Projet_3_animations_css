@@ -4,7 +4,7 @@ $secondary-color: #FF79DA;
 $third-color: #99E2D0;
 $localisation-color: rgba(189, 177, 177, 0.341);
 $localisation-font: darken($localisation-color, 100%);
-$background-main : lighten($primary-color, 38%);
+$background-main : lighten($primary-color, 37.2%);
 $gradient: linear-gradient($secondary-color,$primary-color);
 $gradient-hover: linear-gradient(lighten($secondary-color, 10%),lighten($primary-color, 10%));
 @mixin shadow-box{
