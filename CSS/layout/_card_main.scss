@@ -37,7 +37,7 @@
         left: 85%;
         bottom: 15%;
         font-size: 3vh;
-        &:hover {
+        &:active {
         animation: heart-a2 3s .2s both;
         cursor: pointer;
         transform-origin: 50% bottom;

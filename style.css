@@ -1,6 +1,28 @@
 @charset "UTF-8";
 /* mise en place des imports des autres partiels*/
 /*variables mises en places dans les autres parties du scss*/
+@keyframes lissage {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.plat__1 {
+  animation: lissage 1s;
+}
+
+.plat__2 {
+  animation: lissage 1.5s;
+}
+
+.plat__3 {
+  animation: lissage 2.5s;
+}
+
 /*mise en place de la page et la police et les liens cliquables*/
 * {
   box-sizing: content-box;
@@ -9,10 +31,10 @@
 
 body {
   font-family: "roboto";
-  overflow-x: hidden visible;
   margin: 0;
   padding: 0;
   width: 100%;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -70,8 +92,6 @@ header a {
 
 /*structure et couleur du footer*/
 footer {
-  position: absolute;
-  bottom: 0vh;
   background-color: rgb(41, 39, 39);
   height: 24vh;
   color: #fff;
@@ -261,7 +281,7 @@ footer i {
   bottom: 15%;
   font-size: 3vh;
 }
-.restaurant__card i:hover {
+.restaurant__card i:active {
   animation: heart-a2 3s 0.2s both;
   cursor: pointer;
   transform-origin: 50% bottom;
@@ -300,20 +320,125 @@ footer i {
   height: 30vh;
   width: 100%;
   position: relative;
+  z-index: -2;
 }
 
 .menu__totality {
+  height: 180vh;
+  width: 100%;
+}
+.menu__totality h2 {
+  font-family: "robotoLight";
+  font-size: 2vh;
+  font-weight: 200;
+  margin: 2vh;
+}
+
+.background__menu {
   position: absolute;
-  top: 25vh;
-  height: 100vh;
+  top: 32vh;
+  height: 180vh;
   width: 100%;
   background-color: #f7f3fd;
   border-top-left-radius: 5vh;
   border-top-right-radius: 5vh;
+  z-index: -1;
 }
 
-main {
+.bloc-titre__like {
   position: relative;
+  display: flex;
+  margin-top: -5vh;
+  margin-left: 3vh;
+}
+.bloc-titre__like h1 {
+  font-family: "Shrikhand";
+  font-weight: 300;
+  font-size: 3vh;
+}
+.bloc-titre__like i {
+  position: absolute;
+  font-size: 3vh;
+  right: 12%;
+  top: 35%;
+}
+
+.menu__title {
+  position: relative;
+  margin-top: 5vh;
+}
+
+.border {
+  position: absolute;
+  width: 5vh;
+  height: 0;
+  margin-left: 2vh;
+  top: 2.8vh;
+  border-top: solid 3px #99E2D0;
+}
+
+.plat__1, .plat__2, .plat__3 {
+  height: 9vh;
+  width: 95%;
+  border-radius: 2vh;
+  margin: 1vh;
+  margin-top: 2vh;
+  box-shadow: 2px 10px 15px rgba(189, 177, 177, 0.341);
+  position: relative;
+  background-color: #fff;
+}
+
+.plat__1:hover, .plat__2:hover, .plat__3:hover {
+  cursor: pointer;
+  width: 75.5%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transition: width 0.9s;
+}
+.plat__1:hover .check, .plat__2:hover .check, .plat__3:hover .check {
+  transform: translateX(73px);
+  transition: transform 0.9s;
+  z-index: 2;
+  opacity: 1;
+}
+.plat__1:hover .cross, .plat__2:hover .cross, .plat__3:hover .cross {
+  transform: rotate(140deg);
+  transition: transform 1s;
+}
+
+.check {
+  transform: translateX(50px);
+}
+
+.cross {
+  width: 0.5vh;
+  height: 0.3vh;
+  border-bottom: solid 2px #99E2D0;
+  border-left: solid 2px #99E2D0;
+  border-top: none;
+  border-right: none;
+  cursor: pointer;
+  position: absolute;
+  background-color: #fff;
+  rotate: 180deg;
+  top: 45%;
+  right: 41%;
+}
+
+.check {
+  position: absolute;
+  height: 9.1vh;
+  width: 20vw;
+  opacity: 0;
+  background-color: #99E2D0;
+  right: 0;
+  top: 0;
+  border-top-right-radius: 2vh;
+  border-bottom-right-radius: 2vh;
+}
+
+span {
+  overflow: hidden;
 }
 
 /*positionnement des icones et taille*/
@@ -350,11 +475,25 @@ header i {
   color: #fff;
   font-size: 2.3vh;
   font-weight: bolder;
-  border: none;
+  text-align: center;
+  line-height: 7vh;
+  margin-top: 8vh;
 }
 .button:hover {
   background: linear-gradient(#fface8, #ae80e5);
   cursor: pointer;
+}
+.button button {
+  border: none;
+}
+
+.entree__button {
+  height: 3vh;
+  width: 3vh;
+  background-color: white;
+  margin: auto;
+  margin-top: 3vh;
+  border-radius: 50%;
 }
 
 /* animation coeur */

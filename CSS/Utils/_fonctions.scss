@@ -1,3 +1,25 @@
+@keyframes lissage {
+    from {
+      transform: translateY(10px);
+      opacity: 0;
+      
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .plat__1 {
+    animation: lissage 1s;
+    
+  }
+  .plat__2{
+    animation: lissage 1.5s;
+  }
+  
+  .plat__3{
+    animation: lissage 2.5s;
+  }
 
     
     
