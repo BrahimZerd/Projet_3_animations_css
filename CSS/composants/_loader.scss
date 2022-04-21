@@ -1,16 +1,4 @@
-/* animation coeur */
-  @keyframes heart-a2 {
-    from {
-      transform: scale(.2);
-      color: $primary-color;
-      font-weight: bold;
-      }
-    to {
-      transform: scale(1);
-      color: $secondary-color;
-      font-weight: bold;
-    }
-  }
+
 
   /* boite loader main page*/
   .spinner__container {

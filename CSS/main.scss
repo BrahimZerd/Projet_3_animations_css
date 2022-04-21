@@ -1,12 +1,16 @@
 /* mise en place des imports des autres partiels*/
 
-
+/*groupe utils avec les différentes variables*/
 @import 'Utils/variables.scss';
 @import 'Utils/fonctions.scss';
 @import 'Utils/mixins';
 
+
+/*mise en page général */
 @import 'Base/globals';
 
+
+/*structure des différents blocs */
 @import "layout/header";
 @import 'layout/footer.scss';
 @import 'layout/presentation';
@@ -14,12 +18,13 @@
 @import 'layout/localisation';
 @import 'layout/card_main';
 
+/*structure et mise en page des pages des restaurants*/
 @import "pages/main-page.scss";
-@import 'pages/Menilmontant';
 
+/*les boutons et placements des icones*/
 @import 'composants/icones';
 @import 'composants/buttons';
-
+/*le chargement*/
 @import 'composants/loader.scss';
 
 

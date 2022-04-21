@@ -21,7 +21,19 @@
     animation: lissage 2.5s;
   }
 
-    
+  /* animation coeur */
+  @keyframes heart-a2 {
+    from {
+      transform: scale(.5);
+      color: $primary-color;
+      font-weight: bold;
+      }
+    to {
+      transform: scale(1);
+      color: $secondary-color;
+      font-weight: bold;
+    }
+  }  
     
 
 
