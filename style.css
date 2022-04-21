@@ -208,15 +208,6 @@ footer i {
 #localisation {
   overflow: hidden;
 }
-@media (min-width: 768px) {
-  #localisation {
-    width: 35vh;
-    margin-left: 75vh;
-  }
-  #localisation input {
-    margin-left: 2vh;
-  }
-}
 #localisation div {
   background-color: rgba(189, 177, 177, 0.341);
   display: flex;
@@ -224,13 +215,6 @@ footer i {
   align-items: center;
   box-shadow: -2px 20px 40px -14px #000;
   border-top: solid 2px rgba(189, 177, 177, 0.341);
-}
-@media (max-width: 768px) {
-  #localisation div button {
-    display: none;
-    border-radius: 25px;
-    background-color: #9356DC;
-  }
 }
 #localisation div input {
   margin-right: 30vh;
