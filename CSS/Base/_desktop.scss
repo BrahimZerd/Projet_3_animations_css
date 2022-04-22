@@ -1,0 +1,122 @@
+@media (min-width: 992px) {
+    body {
+        width: 100%;
+    }
+    .spinner, .spinner__container {
+        display: none;
+    }
+    header {
+        background: $background-main;
+        height: 15vh;
+        img{
+            margin: 2vh;
+            height: 5vh;
+        }
+        .spinner {
+            display: none;
+        }
+    }
+    #localisation div {
+        
+        border-top: none;
+    margin: auto;
+    background:$background-main;
+        position: relative;
+        i{
+            display: none;
+        }
+        input{
+            margin: 33vw;
+            width: 17vw;
+            height: 3.7vh;
+           
+        }
+        button {
+            border: none;
+            height: 4vh;
+            width: 15vw;
+            position: absolute;
+            background: $gradient;
+            color: #fff;
+            top: 20%;
+            right: 34%;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+   #localisation {
+    margin-top: 1vh;
+    
+   }
+    #explore {
+        background-color: #fff;
+        position: relative;
+        height: 20vh;
+        margin-top: 5%;
+        h1{
+            font-size: 3.5vh;
+            margin-left: 5%;
+            white-space: nowrap;
+            
+        }
+        span {
+            white-space: nowrap;
+            margin: 0;
+            margin-left: 7%;
+            
+        }
+        button {
+            position: absolute;
+            margin-left: 3vh;
+            bottom: 42%;
+            right: 15%;
+        }
+}
+       #navigate {
+           
+           
+           margin-top: 10vh;
+           display: flex;
+           
+           justify-content: flex-start;
+           
+           
+           height: 25vh;
+           h1{
+               font-size: 175%;
+               line-height: 185%;
+               text-overflow: ellipsis;
+           }
+         a {
+            
+             margin-left: 1%;
+         }
+           nav {
+               display: flex;
+               
+              
+           }
+
+
+           .navigate__nav {
+               
+               display: inline-block;
+               width: 20vw;
+               height: 8vh;
+               line-height: 8vh;
+               font-size: 1vw;
+               margin-left: 5vw;
+               .navigate__box {
+                   bottom: 75%;
+                   left: 48%;
+               }
+               i{
+                   bottom: 35%;
+                   right: 38%;
+               }
+               
+               
+           }
+        }}
+

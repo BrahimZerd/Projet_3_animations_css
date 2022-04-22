@@ -19,6 +19,7 @@
             font-weight: bold;
             font-size: 2vh;
             
+            
         }
         
             
@@ -27,19 +28,7 @@
             margin-left: 32%;
             width:10%;
             font-size: 2.3vh;
-            @media (min-width:768px){
-                display:none;}
-        }
-        @media (min-width:768px){
-            input{
-                width: 17vh;
-
-            }
-        form {
-            display: flex;
-            
-            
+           }
         }}
-
-       }
-    }
+        
+        
