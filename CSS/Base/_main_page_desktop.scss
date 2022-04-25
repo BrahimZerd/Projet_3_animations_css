@@ -1,0 +1,110 @@
+@media (min-width: 992px) {
+    body {
+        background-color:#f7f3fd;
+    }
+    header p{
+        margin-left: 85vw;
+        margin-top: 7vh;
+        display: inline-block;
+        color: #000;
+        font-size: 2vh;
+        white-space: nowrap;
+    }
+
+    header{
+        .fa-solid{
+        display: none;
+    }
+
+    
+}
+.background__image3 {
+   position:absolute;
+   top: 10rem;
+    opacity: 0.8;
+    border-radius: 25px;
+    height: 108.3rem;
+    width: 80%;
+    margin-left: 10rem;
+    object-fit: cover;
+    
+    
+}
+#menu__totality {
+.check {
+    top: 75%;
+    right: 75%;
+} 
+
+   
+}
+.background__menu
+{   width: 50%;
+    margin-left: 25%;
+    height: 100.6rem;
+    opacity: 0.9;
+
+
+
+}
+.menu__title {
+    margin-left: 47%;
+    .border {
+        width: 6%;
+        padding-bottom:115px;
+    }
+    
+}
+.plat__1, .plat__2,.plat__3 {
+    width: 30%;
+    
+    height: 6%;
+    margin: auto;
+    
+}
+
+.bloc-titre__like{
+   margin-left: 27%;
+   margin-top: 10rem;
+   i{
+       top: 2rem;
+       right: 40%;
+   }
+   
+   h1 {
+       font-size: 2rem;
+}
+}
+.plat__1:hover, .plat__2:hover, .plat__3:hover{
+    width: 35%;
+    
+    .check{
+        transform: translateX(95%);
+        transition: transform 0.5s;
+        z-index:2;
+        opacity: 1;
+        
+        }
+        .cross{
+          transform:rotate(310deg);
+          transition: transform 1s;
+        }
+}
+.cross {
+    top: 40%;
+    right: 42%;
+}
+.check {
+    height: 100%;
+    width: 15%;
+}
+.entree__button {
+height: 35%;
+width: 35%;
+}
+h3 {
+    padding: 2%;
+    
+}
+
+}

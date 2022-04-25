@@ -138,7 +138,6 @@ footer i {
   font-weight: 900;
 }
 #explore span {
-  width: 40vh;
   margin: auto;
   display: block;
   font-size: 2.35vh;
@@ -347,8 +346,6 @@ footer i {
   margin: 1vh;
   font-size: 2.5vh;
   text-align: left;
-  padding-top: 3%;
-  margin-bottom: 0px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -416,31 +413,30 @@ footer i {
   transition: width 0.7s;
 }
 .plat__1:hover .check, .plat__2:hover .check, .plat__3:hover .check {
-  transform: translateX(73px);
+  transform: translateX(95%);
   transition: transform 0.5s;
   z-index: 2;
   opacity: 1;
 }
 .plat__1:hover .cross, .plat__2:hover .cross, .plat__3:hover .cross {
-  transform: rotate(140deg);
+  transform: rotate(310deg);
   transition: transform 1s;
 }
 
 .check {
-  transform: translateX(50px);
+  transform: translateX(50%);
 }
 
 .cross {
   width: 0.5vh;
   height: 0.3vh;
-  border-bottom: solid 2px #99E2D0;
-  border-left: solid 2px #99E2D0;
+  border-bottom: solid 0.2em #99E2D0;
+  border-left: solid 0.2em #99E2D0;
   border-top: none;
   border-right: none;
   cursor: pointer;
   position: absolute;
   background-color: #fff;
-  rotate: 180deg;
   top: 45%;
   right: 41%;
 }
@@ -603,6 +599,106 @@ header i {
 }
 /*media querries*/
 @media (min-width: 992px) {
+  body {
+    background-color: #f7f3fd;
+  }
+
+  header p {
+    margin-left: 85vw;
+    margin-top: 7vh;
+    display: inline-block;
+    color: #000;
+    font-size: 2vh;
+    white-space: nowrap;
+  }
+
+  header .fa-solid {
+    display: none;
+  }
+
+  .background__image3 {
+    position: absolute;
+    top: 10rem;
+    opacity: 0.8;
+    border-radius: 25px;
+    height: 108.3rem;
+    width: 80%;
+    margin-left: 10rem;
+    object-fit: cover;
+  }
+
+  #menu__totality .check {
+    top: 75%;
+    right: 75%;
+  }
+
+  .background__menu {
+    width: 50%;
+    margin-left: 25%;
+    height: 100.6rem;
+    opacity: 0.9;
+  }
+
+  .menu__title {
+    margin-left: 47%;
+  }
+  .menu__title .border {
+    width: 6%;
+    padding-bottom: 115px;
+  }
+
+  .plat__1, .plat__2, .plat__3 {
+    width: 30%;
+    height: 6%;
+    margin: auto;
+  }
+
+  .bloc-titre__like {
+    margin-left: 27%;
+    margin-top: 10rem;
+  }
+  .bloc-titre__like i {
+    top: 2rem;
+    right: 40%;
+  }
+  .bloc-titre__like h1 {
+    font-size: 2rem;
+  }
+
+  .plat__1:hover, .plat__2:hover, .plat__3:hover {
+    width: 35%;
+  }
+  .plat__1:hover .check, .plat__2:hover .check, .plat__3:hover .check {
+    transform: translateX(95%);
+    transition: transform 0.5s;
+    z-index: 2;
+    opacity: 1;
+  }
+  .plat__1:hover .cross, .plat__2:hover .cross, .plat__3:hover .cross {
+    transform: rotate(310deg);
+    transition: transform 1s;
+  }
+
+  .cross {
+    top: 40%;
+    right: 42%;
+  }
+
+  .check {
+    height: 100%;
+    width: 15%;
+  }
+
+  .entree__button {
+    height: 35%;
+    width: 35%;
+  }
+
+  h3 {
+    padding: 2%;
+  }
+}
+@media (min-width: 992px) {
   /*index */
   body {
     width: 100%;
@@ -672,8 +768,7 @@ header i {
   #explore span {
     font-size: 1.5vw;
     white-space: nowrap;
-    margin: 0;
-    margin-left: 6.5%;
+    margin-right: 43%;
   }
   #explore button {
     position: absolute;
