@@ -1,4 +1,6 @@
 @media (min-width: 992px) {
+
+    /*index */
     body {
         width: 100%;
     }
@@ -40,6 +42,7 @@
             color: #fff;
             top: 20%;
             right: 34%;
+            display: block;
             &:hover{
                 cursor: pointer;
             }
@@ -55,15 +58,18 @@
         height: 20vh;
         margin-top: 5%;
         h1{
-            font-size: 3.5vh;
+            font-size: 2vw;
             margin-left: 5%;
             white-space: nowrap;
+            text-overflow: ellipsis;
+            
             
         }
         span {
+            font-size: 1.5vw;
             white-space: nowrap;
             margin: 0;
-            margin-left: 7%;
+            margin-left: 6.5%;
             
         }
         button {
@@ -118,5 +124,59 @@
                
                
            }
-        }}
+
+        }
+
+        #restaurant{
+            height: 100vh;
+            
+        }
+        .restaurant__group{
+       flex-direction: row;
+       margin-right: 1vw;
+       row-gap: 2vw;
+            
+
+        }
+        .restaurant__card {
+            h2 {
+                font-size: 1.3rem;
+            }
+            span {
+                font-size: 1.2rem;
+            }
+            
+            height: 75vh;
+            img {
+                height: 85%;
+                object-fit: cover;
+            }
+            i {
+                bottom: 5%;
+            }
+        }
+    footer {
+        height: 40%;
+        h3 {
+            text-align: center;
+            
+        }
+        nav {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-right: 2vw;
+            padding-bottom: 5vh;
+            
+           a {
+               
+               font-size: 2vh;
+               font-weight: 100;
+               
+               
+
+           }
+        }
+    }
+    }
+        
 

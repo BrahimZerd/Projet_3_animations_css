@@ -10,6 +10,9 @@
         align-items: center;
         box-shadow: -2px 20px 40px -14px #000;
         border-top: solid 2px $localisation-color;
+        button {
+            display: none;
+        }
         
         input {
             margin-right: 30vh;

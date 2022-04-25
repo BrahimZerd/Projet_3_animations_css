@@ -111,13 +111,11 @@ footer a {
   font-family: "roboto";
   font-weight: bold;
   font-size: 2vh;
-  width: 70%;
   margin-top: 1vh;
 }
 footer nav {
   margin-left: 2.5vh;
   margin-top: 2vh;
-  display: block;
   display: flex;
   flex-direction: column;
 }
@@ -199,6 +197,9 @@ footer i {
   align-items: center;
   box-shadow: -2px 20px 40px -14px #000;
   border-top: solid 2px rgba(189, 177, 177, 0.341);
+}
+#localisation div button {
+  display: none;
 }
 #localisation div input {
   margin-right: 30vh;
@@ -602,6 +603,7 @@ header i {
 }
 /*media querries*/
 @media (min-width: 992px) {
+  /*index */
   body {
     width: 100%;
   }
@@ -645,6 +647,7 @@ header i {
     color: #fff;
     top: 20%;
     right: 34%;
+    display: block;
   }
   #localisation div button:hover {
     cursor: pointer;
@@ -661,14 +664,16 @@ header i {
     margin-top: 5%;
   }
   #explore h1 {
-    font-size: 3.5vh;
+    font-size: 2vw;
     margin-left: 5%;
     white-space: nowrap;
+    text-overflow: ellipsis;
   }
   #explore span {
+    font-size: 1.5vw;
     white-space: nowrap;
     margin: 0;
-    margin-left: 7%;
+    margin-left: 6.5%;
   }
   #explore button {
     position: absolute;
@@ -709,6 +714,50 @@ header i {
   #navigate .navigate__nav i {
     bottom: 35%;
     right: 38%;
+  }
+
+  #restaurant {
+    height: 100vh;
+  }
+
+  .restaurant__group {
+    flex-direction: row;
+    margin-right: 1vw;
+    row-gap: 2vw;
+  }
+
+  .restaurant__card {
+    height: 75vh;
+  }
+  .restaurant__card h2 {
+    font-size: 1.3rem;
+  }
+  .restaurant__card span {
+    font-size: 1.2rem;
+  }
+  .restaurant__card img {
+    height: 85%;
+    object-fit: cover;
+  }
+  .restaurant__card i {
+    bottom: 5%;
+  }
+
+  footer {
+    height: 40%;
+  }
+  footer h3 {
+    text-align: center;
+  }
+  footer nav {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 2vw;
+    padding-bottom: 5vh;
+  }
+  footer nav a {
+    font-size: 2vh;
+    font-weight: 100;
   }
 }
 
