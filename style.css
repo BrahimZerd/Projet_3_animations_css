@@ -546,13 +546,13 @@ header i {
   margin: 0;
   z-index: 1;
   background-color: #fff;
-  animation: nomore 3s 1s both;
+  animation: nomore 0s 3s both;
 }
 
 /*loader */
 .spinner {
-  top: 25%;
-  left: 30%;
+  top: 40%;
+  left: 25%;
   position: absolute;
   height: 15vh;
   width: 15vh;
@@ -570,7 +570,7 @@ header i {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(1040deg);
   }
 }
 /*arrêt loader */
@@ -587,6 +587,7 @@ header i {
     opacity: 0;
   }
 }
+/*coeur qui charge*/
 @keyframes stayred {
   from {
     opacity: 0;
@@ -616,7 +617,7 @@ header i {
     display: none;
   }
 
-  .background__image3 {
+  .background__image3, .background__image2, .background__image4, .background__image1 {
     position: absolute;
     top: 10rem;
     opacity: 0.8;
@@ -625,6 +626,14 @@ header i {
     width: 80%;
     margin-left: 10rem;
     object-fit: cover;
+  }
+
+  .background__image2 {
+    height: 114.3rem;
+  }
+
+  .menu__totality__taller .background__menu {
+    height: 106.6rem;
   }
 
   #menu__totality .check {
@@ -660,6 +669,11 @@ header i {
   .bloc-titre__like i {
     top: 2rem;
     right: 40%;
+  }
+  .bloc-titre__like i:active {
+    animation: heart-a2 3s 0.2s both;
+    cursor: pointer;
+    transform-origin: 50% bottom;
   }
   .bloc-titre__like h1 {
     font-size: 2rem;
@@ -702,10 +716,6 @@ header i {
   /*index */
   body {
     width: 100%;
-  }
-
-  .spinner, .spinner__container {
-    display: none;
   }
 
   header {

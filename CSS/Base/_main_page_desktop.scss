@@ -18,7 +18,7 @@
 
     
 }
-.background__image3 {
+.background__image3,.background__image2, .background__image4,.background__image1 {
    position:absolute;
    top: 10rem;
     opacity: 0.8;
@@ -28,8 +28,14 @@
     margin-left: 10rem;
     object-fit: cover;
     
-    
 }
+.background__image2{
+    height: 114.3rem;
+}
+.menu__totality__taller{
+.background__menu {
+    height: 106.6rem;
+}}
 #menu__totality {
 .check {
     top: 75%;
@@ -53,8 +59,7 @@
         width: 6%;
         padding-bottom:115px;
     }
-    
-}
+    }
 .plat__1, .plat__2,.plat__3 {
     width: 30%;
     
@@ -69,6 +74,11 @@
    i{
        top: 2rem;
        right: 40%;
+       &:active { 
+        animation: heart-a2 3s .2s both;
+        cursor: pointer;
+        transform-origin: 50% bottom;
+}
    }
    
    h1 {
