@@ -1,0 +1,128 @@
+@media (min-width: 768px) and (max-width: 991px) {
+
+#navigate {
+    height: 50%;
+   .navigate__nav{
+       margin-left: 10vw;
+       line-height: 10.9vh;
+       margin-bottom: 5vh;
+   } 
+}
+#navigate .navigate__nav .navigate__box {
+    bottom: 85%;
+   left: 45%;
+   
+   
+}
+.navigate__nav {
+    padding-bottom: 3%;
+    font-size: 115%;
+    text-align: center;
+   
+    
+    
+    .fa-solid {
+     position: absolute;
+     top: 32%;
+     left: -35%;
+     
+    }
+}
+footer {
+    height: 55%;
+}
+footer nav {
+    display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   padding-bottom: 5%;
+   
+   
+    a {
+        font-weight: 100;
+        font-size: 1.3vh;
+        margin-right: 5%;
+        
+    }
+}
+.restaurant__card {
+    margin: auto;
+    margin-bottom: 5%;
+}
+body {
+    width: 100%;
+}
+.background__image1,.background__image2,.background__image3, .background__image4{
+    position:absolute;
+    top: 5rem;
+    
+    opacity: 0.8;
+    border-radius: 25px;
+    height: 108.3rem;
+    
+    
+    object-fit: cover;
+}
+.background__menu
+{   width: 100%;
+    
+    height: 90.6rem;
+    opacity: 0.6;
+
+
+
+}
+.bloc-titre__like{
+    margin-left: 27%;
+    margin-top: 10rem;
+    i{
+        top: 2rem;
+        right: 40%;
+        &:active { 
+         animation: heart-a2 3s .2s both;
+         cursor: pointer;
+         transform-origin: 50% bottom;
+ }
+
+}}
+.cross {
+    right: 45%;
+}
+.bloc-titre__like{
+    margin-top: 13rem;
+    margin-left: 12rem;
+    i{
+        left: 85%;
+    }
+}
+.menu__totality {
+    height: 90rem;
+    width: 80%;
+}
+.plat__1,.plat__2, .plat__3{
+    margin-left: 5rem;
+}
+.button {
+    margin-left: 11rem;
+}
+.menu__totality__taller{
+    width: 70%;
+    .plat__1,.plat__2, .plat__3 {
+        
+        margin-left: 7rem;
+        
+        position: relative;
+    }
+    i {
+        left: 115%;
+        top: 30%;
+    }
+    height: 95rem;
+    .background__image2{
+        height: 110rem;
+    }
+    .background__menu {
+        height: 95.6rem;
+        
+    }}
+}

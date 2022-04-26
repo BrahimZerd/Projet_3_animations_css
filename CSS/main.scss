@@ -28,8 +28,9 @@
 @import 'composants/loader.scss';
 
 /*media querries*/
-@import 'Base/main_page_desktop';
-@import 'Base/index_desktop';
+@import 'pages/main_page_desktop';
+@import 'pages/index_desktop';
+@import 'pages/_tablet';
 
 
 
