@@ -73,10 +73,9 @@ body {
 
 }
 .bloc-titre__like{
-    margin-left: 27%;
-    margin-top: 10rem;
+    position: relative;
     i{
-        top: 2rem;
+        top: 35%;
         right: 40%;
         &:active { 
          animation: heart-a2 3s .2s both;
@@ -89,8 +88,8 @@ body {
     right: 45%;
 }
 .bloc-titre__like{
-    margin-top: 13rem;
-    margin-left: 12rem;
+    margin-top: 38%;
+    
     i{
         left: 85%;
     }
@@ -125,4 +124,10 @@ body {
         height: 95.6rem;
         
     }}
+    .button {
+        margin: auto;
+        margin-top: 8%;
+        
+        width: 35%;
+    }
 }

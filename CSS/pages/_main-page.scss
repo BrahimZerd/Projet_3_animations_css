@@ -85,22 +85,27 @@
         border-top-right-radius: 5vh;
         z-index: -1;
      }
-    
+    .button {
+        width: 35%;
+        
+    }
      .bloc-titre__like {
-         position: relative;
+         justify-content: space-evenly;
          display: flex;
          margin-top: -5vh;
          margin-left: 3vh;
+         
          h1{
              font-family:'Shrikhand';
              font-weight: 300;
-             font-size: 3vh;
+             font-size: 137%;
+             margin-right: 30%;
          }
-         i{
-             position: absolute;
-             font-size: 3vh;
-             right: 12%;
-             top:35%;
+         div i{
+             padding-top: 103%;
+             
+             
+             font-size: 117%;
          }
         
      }
