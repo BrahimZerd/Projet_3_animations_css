@@ -2,15 +2,15 @@
 .button{
     background: $gradient;
      border-radius: 30vh;
+     width: 200px;
+    padding: 18px; 
      
-     height: 8vh;
-     margin: auto;
     margin-top: 4vh;
     color: #fff;
-    font-size: 95%;
+    font-size: 1em;
     font-weight: bolder;
     text-align: center;
-    line-height: 7vh;
+    
     
     border:none;
     &:hover {

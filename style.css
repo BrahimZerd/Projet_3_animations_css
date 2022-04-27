@@ -129,7 +129,7 @@ footer i {
 /*menu exploration du site*/
 #explore {
   height: 37vh;
-  background-color: #f7f3fd;
+  background-color: #f2f2f2;
   text-align: center;
 }
 #explore h1 {
@@ -140,7 +140,7 @@ footer i {
   font-weight: 900;
 }
 #explore .button {
-  font-size: 75%;
+  font-weight: 700;
   white-space: nowrap;
 }
 #explore span {
@@ -161,7 +161,7 @@ footer i {
   overflow: hidden;
 }
 #navigate .navigate__nav {
-  background-color: #f7f3fd;
+  background-color: #f2f2f2;
   border-radius: 25px;
   line-height: 10vh;
   text-align: center;
@@ -212,7 +212,7 @@ footer i {
 }
 #localisation div input {
   margin-right: 30vh;
-  width: 50%;
+  width: 55%;
   border: none;
   background-color: rgba(233, 229, 229, 0.341);
   font-weight: bold;
@@ -285,7 +285,7 @@ footer i {
 
 /*structure et mise en page des pages des restaurants*/
 #restaurant {
-  background: #f7f3fd;
+  background: #f2f2f2;
   height: 140vh;
   width: 100%;
 }
@@ -520,14 +520,13 @@ header i {
 .button {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30vh;
-  height: 8vh;
-  margin: auto;
+  width: 200px;
+  padding: 18px;
   margin-top: 4vh;
   color: #fff;
-  font-size: 95%;
+  font-size: 1em;
   font-weight: bolder;
   text-align: center;
-  line-height: 7vh;
   border: none;
 }
 .button:hover {
