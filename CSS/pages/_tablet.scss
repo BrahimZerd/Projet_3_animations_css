@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 
 #navigate {
     height: 50%;
@@ -10,7 +10,7 @@
 }
 #navigate .navigate__nav .navigate__box {
     bottom: 85%;
-   left: 45%;
+   left: 48%;
    
    
 }
@@ -33,17 +33,18 @@ footer {
 }
 footer nav {
     display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   padding-bottom: 5%;
-   
-   
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 5vh;
     a {
         font-weight: 100;
-        font-size: 1.3vh;
+        
         margin-right: 5%;
         
     }
+}
+#restaurant {
+    padding-bottom: 7%
 }
 .restaurant__card {
     margin: auto;
@@ -63,6 +64,7 @@ body {
     
     object-fit: cover;
 }
+
 .background__menu
 {   width: 100%;
     
@@ -84,11 +86,15 @@ body {
  }
 
 }}
+.check {
+    width: 27%;
+}
 .cross {
     right: 45%;
+    
 }
 .bloc-titre__like{
-    margin-top: 38%;
+    margin-top: 27vh;
     
     i{
         left: 85%;
@@ -101,9 +107,7 @@ body {
 .plat__1,.plat__2, .plat__3{
     margin-left: 5rem;
 }
-.button {
-    margin-left: 11rem;
-}
+
 .menu__totality__taller{
     width: 70%;
     .plat__1,.plat__2, .plat__3 {
@@ -120,14 +124,25 @@ body {
     .background__image2{
         height: 110rem;
     }
+   
     .background__menu {
         height: 95.6rem;
         
     }}
-    .button {
+    .button__main-page {
         margin: auto;
-        margin-top: 8%;
-        
-        width: 35%;
+        width: 70%;
+        margin-left: 20%;
+        width: 85%;
+        .button {
+            width: 70%;
+            margin-top: 25%;
+            
+        }
     }
-}
+    .button{
+        font-size: 115%;
+        
+        
+    }
+    }

@@ -50,6 +50,7 @@ body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
+  font-size: 80%;
 }
 
 @font-face {
@@ -112,6 +113,7 @@ footer a {
   font-weight: bold;
   font-size: 2vh;
   margin-top: 1vh;
+  display: inline-block;
 }
 footer nav {
   margin-left: 2.5vh;
@@ -170,6 +172,7 @@ footer i {
   color: black;
   font-weight: 600;
   position: relative;
+  font-size: 95%;
   box-shadow: 2px 10px 15px rgba(189, 177, 177, 0.341);
   /*boite chiffrée indiquant la liste*/
 }
@@ -376,7 +379,6 @@ footer i {
 .bloc-titre__like {
   justify-content: space-evenly;
   display: flex;
-  margin-top: -5vh;
   margin-left: 3vh;
 }
 .bloc-titre__like h1 {
@@ -608,7 +610,7 @@ header i {
   }
 }
 /*media querries*/
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   body {
     background-color: #f7f3fd;
   }
@@ -672,12 +674,8 @@ header i {
   }
 
   .bloc-titre__like {
-    margin-left: 27%;
+    margin-left: 22%;
     margin-top: 10rem;
-  }
-  .bloc-titre__like i {
-    top: 2rem;
-    right: 40%;
   }
   .bloc-titre__like i:active {
     animation: heart-a2 3s 0.2s both;
@@ -685,7 +683,8 @@ header i {
     transform-origin: 50% bottom;
   }
   .bloc-titre__like h1 {
-    font-size: 2rem;
+    position: relative;
+    font-size: 155%;
   }
 
   .plat__1:hover, .plat__2:hover, .plat__3:hover {
@@ -720,8 +719,17 @@ header i {
   h3 {
     padding: 2%;
   }
+
+  .bloc-titre__like div {
+    position: absolute;
+    height: 10vh;
+    width: 10vh;
+    font-size: 3vh;
+    left: 70%;
+    top: 25%;
+  }
 }
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   /*index */
   body {
     width: 100%;
@@ -878,7 +886,7 @@ header i {
     font-weight: 100;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   #navigate {
     height: 50%;
   }
@@ -890,7 +898,7 @@ header i {
 
   #navigate .navigate__nav .navigate__box {
     bottom: 85%;
-    left: 45%;
+    left: 48%;
   }
 
   .navigate__nav {
@@ -912,12 +920,15 @@ header i {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-bottom: 5%;
+    padding-bottom: 5vh;
   }
   footer nav a {
     font-weight: 100;
-    font-size: 1.3vh;
     margin-right: 5%;
+  }
+
+  #restaurant {
+    padding-bottom: 7%;
   }
 
   .restaurant__card {
@@ -957,12 +968,16 @@ header i {
     transform-origin: 50% bottom;
   }
 
+  .check {
+    width: 27%;
+  }
+
   .cross {
     right: 45%;
   }
 
   .bloc-titre__like {
-    margin-top: 38%;
+    margin-top: 27vh;
   }
   .bloc-titre__like i {
     left: 85%;
@@ -975,10 +990,6 @@ header i {
 
   .plat__1, .plat__2, .plat__3 {
     margin-left: 5rem;
-  }
-
-  .button {
-    margin-left: 11rem;
   }
 
   .menu__totality__taller {
@@ -1000,10 +1011,19 @@ header i {
     height: 95.6rem;
   }
 
-  .button {
+  .button__main-page {
     margin: auto;
-    margin-top: 8%;
-    width: 35%;
+    width: 70%;
+    margin-left: 20%;
+    width: 85%;
+  }
+  .button__main-page .button {
+    width: 70%;
+    margin-top: 25%;
+  }
+
+  .button {
+    font-size: 115%;
   }
 }
 

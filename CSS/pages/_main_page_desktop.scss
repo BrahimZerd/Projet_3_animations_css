@@ -1,4 +1,4 @@
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
     body {
         background-color:#f7f3fd;
     }
@@ -69,11 +69,14 @@
 }
 
 .bloc-titre__like{
-   margin-left: 27%;
+   margin-left: 22%;
    margin-top: 10rem;
+   
+   
+   
    i{
-       top: 2rem;
-       right: 40%;
+       
+
        &:active { 
         animation: heart-a2 3s .2s both;
         cursor: pointer;
@@ -82,7 +85,8 @@
    }
    
    h1 {
-       font-size: 2rem;
+       position: relative;
+       font-size: 155%;
 }
 }
 .plat__1:hover, .plat__2:hover, .plat__3:hover{
@@ -116,5 +120,12 @@ h3 {
     padding: 2%;
     
 }
-
+.bloc-titre__like div {
+    position: absolute;
+    height: 10vh;
+    width: 10vh;
+    font-size: 3vh;
+    left: 70%;
+    top: 25%;
+}
 }
