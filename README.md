@@ -2,7 +2,7 @@
 
 ## Présentation du projet
 
-![https://brahimzerd.github.io/Projet_3_animations_css/](https://github.com/BrahimZerd/Projet_3_animations_css/tree/main/images/imgsite1.png)
+![https://brahimzerd.github.io/Projet_3_animations_css/](https://github.com/BrahimZerd/Projet_3_animations_css/blob/main/images/imgsite1.png?raw=true)
 
 Le but de ce projet était de créer un site web responsive d'un site de réservation de restaurants en ligne.
 
