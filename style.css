@@ -2,6 +2,7 @@
 /* mise en place des imports des autres partiels*/
 /*groupe utils avec les différentes variables*/
 /*variables mises en places dans les autres parties du scss*/
+/* animation chargement page */
 @keyframes lissage {
   from {
     transform: translateY(10px);
@@ -37,6 +38,7 @@
     font-weight: bold;
   }
 }
+/*hover des boutons */
 /*mise en page général */
 /*mise en place de la page et la police et les liens cliquables*/
 * {
@@ -178,6 +180,7 @@ footer i {
 }
 #navigate .navigate__nav:hover {
   background-color: #f2eafb;
+  box-shadow: 1px 5px 5px #000;
 }
 #navigate .navigate__nav .navigate__box {
   display: block;
@@ -284,6 +287,7 @@ footer i {
 }
 
 /*structure et mise en page des pages des restaurants*/
+/*format mobile */
 #restaurant {
   background: #f2f2f2;
   height: 140vh;
@@ -499,6 +503,7 @@ footer i {
 
 /*les boutons et placements des icones*/
 /*positionnement des icones et taille*/
+/*icones navigation */
 #navigate i {
   position: absolute;
   right: 14vh;
@@ -615,6 +620,7 @@ header i {
 }
 /*media querries*/
 @media only screen and (min-width: 992px) {
+  /*format desktop */
   body {
     background-color: #f7f3fd;
   }
@@ -896,6 +902,7 @@ header i {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  /*format tablette */
   #navigate {
     height: 50%;
   }
@@ -910,6 +917,7 @@ header i {
     left: 48%;
   }
 
+  /* partie navigation placement boites */
   .navigate__nav {
     padding-bottom: 3%;
     font-size: 115%;
@@ -1020,6 +1028,7 @@ header i {
     height: 95.6rem;
   }
 
+  /* placement boutons et dimensions format tablette */
   .button__main-page {
     margin: auto;
     width: 100%;
