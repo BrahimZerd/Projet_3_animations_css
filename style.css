@@ -25,6 +25,19 @@
   animation: lissage 2.5s;
 }
 
+/* animation coeur */
+@keyframes heart-a2 {
+  from {
+    transform: scale(0.5);
+    color: #9356DC;
+    font-weight: bold;
+  }
+  to {
+    transform: scale(1);
+    color: #FF79DA;
+    font-weight: bold;
+  }
+}
 /*hover des boutons */
 /*mise en page général */
 /*mise en place de la page et la police et les liens cliquables*/
