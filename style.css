@@ -266,7 +266,7 @@ footer i {
   font-size: 3vh;
 }
 .restaurant__card i:active {
-  animation: heart-a2 3s 0.2s both;
+  animation: heart-a2 3s;
   cursor: pointer;
   transform-origin: 50% bottom;
 }
